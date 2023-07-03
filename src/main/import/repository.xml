@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+   <modules jcr:primaryType="jnt:modules">
+      <poc-eDocs j:dependencies="dam-selector default"
+                 j:modulePriority="0"
+                 j:moduleType="module"
+                 j:title="PoC eDocuments"
+                 jcr:primaryType="jnt:module">
+         <portlets jcr:primaryType="jnt:portletFolder"/>
+         <files jcr:primaryType="jnt:folder">
+            <eDocs jcr:primaryType="jnt:folder">
+               <family.jpg j:height="1920"
+                           j:width="1610"
+                           j:xresolution="72 dots"
+                           j:yresolution="72 dots"
+                           jcr:mixinTypes="jmix:image jmix:exif"
+                           jcr:primaryType="jnt:file">
+                  <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+               </family.jpg>
+               <keys.jpg j:height="924"
+                         j:width="1510"
+                         j:xresolution="72 dots"
+                         j:yresolution="72 dots"
+                         jcr:mixinTypes="jmix:image jmix:exif"
+                         jcr:primaryType="jnt:file">
+                  <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                  <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+               </keys.jpg>
+            </eDocs>
+         </files>
+         <contents jcr:primaryType="jnt:contentFolder">
+            <sections jcr:primaryType="jnt:contentFolder">
+               <j:translation_en jcr:language="en"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="sections"/>
+               <j:translation_de jcr:language="de"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="sections"/>
+               <j:translation_pt jcr:language="pt"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="sections"/>
+               <j:translation_it jcr:language="it"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="sections"/>
+               <j:translation_fr jcr:language="fr"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="sections"/>
+               <j:translation_es jcr:language="es"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="sections"/>
+               <j:translation_de_DE jcr:language="de_DE"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="sections"/>
+            </sections>
+            <company jcr:primaryType="jnt:contentFolder">
+               <j:translation_en jcr:language="en"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="company"/>
+               <j:translation_de jcr:language="de"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="company"/>
+               <j:translation_pt jcr:language="pt"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="company"/>
+               <j:translation_it jcr:language="it"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="company"/>
+               <j:translation_fr jcr:language="fr"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="compagnie"/>
+               <j:translation_es jcr:language="es"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="company"/>
+               <j:translation_de_DE jcr:language="de_DE"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="company"/>
+            </company>
+            <knowledge jcr:primaryType="jnt:contentFolder">
+               <j:translation_en jcr:language="en"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="knowledge"/>
+               <j:translation_de jcr:language="de"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="knowledge"/>
+               <j:translation_pt jcr:language="pt"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="knowledge"/>
+               <j:translation_it jcr:language="it"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="knowledge"/>
+               <j:translation_fr jcr:language="fr"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="connaissance"/>
+               <j:translation_es jcr:language="es"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="knowledge"/>
+               <j:translation_de_DE jcr:language="de_DE"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="knowledge"/>
+            </knowledge>
+         </contents>
+         <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+         </templates>
+      </poc-eDocs>
+   </modules>
+</content>
