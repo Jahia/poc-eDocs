@@ -1,0 +1,31 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<doc4nt = 'http://modules.se.jahia.org/documents-4-user/nt/1.0'>
+<doc4mix = 'http://modules.se.jahia.org/documents-4-user/mix/1.0'>
+<doc4 = 'http://modules.se.jahia.org/documents-4-user/1.0'>
+
+[doc4mix:components] > jmix:droppableContent, jmix:editorialContent mixin
+
+[doc4mix:image] mixin
+ - doc4:image (weakreference, picker[type='image']) mandatory
+
+[doc4nt:docHeading] > jnt:content, doc4mix:components, jmix:bindedComponent, jmix:studioOnly
+
+[doc4nt:document] > jnt:content, jmix:mainResource, doc4mix:components, doc4mix:image, mix:title orderable
+ - doc4:subtitle (string)
+ - doc4:model (string)
+ - doc4:revision (date)
+ - doc4:company (weakreference) < doc4nt:company
+ - doc4:fragments (weakreference) multiple < doc4nt:fragment
+
+[doc4nt:fragment] > jnt:content, doc4mix:components, doc4mix:image, mix:title
+ - doc4:content (string,richtext[ckeditor.toolbar='Tinny',ckeditor.customConfig='$context/modules/gp-poc-documents/javascript/ckeditor/config/small.js']) internationalized mandatory
+
+[doc4nt:company] > jnt:content, doc4mix:components, doc4mix:image, mix:title
+ - doc4:logo (weakreference, picker[type='image'])
+ - doc4:owner (string)
+ - doc4:adresse (string)
+ - doc4:zipcode (string)
+ - doc4:city (string)
+ - doc4:mobile (string)
+ - doc4:email (string)

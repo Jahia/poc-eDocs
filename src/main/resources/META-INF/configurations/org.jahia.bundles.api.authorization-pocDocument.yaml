@@ -1,0 +1,14 @@
+# default configuration - won't be overridden
+pocDocument:
+  description: "Access document content"
+#  metadata:
+#    visible: true
+  auto_apply:
+#    - always: true
+    - origin: hosted
+    - origin: http://localhost:3000
+  grants:
+    - api:
+        include: graphql
+    - node:
+        pathPattern: /,/files(/.*)?

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>jahia-modules</artifactId>
+        <groupId>org.jahia.modules</groupId>
+        <version>8.1.0.0</version>
+    </parent>
+    <groupId>org.jahia.se.modules</groupId>
+    <artifactId>poc-eDocs</artifactId>
+    <name>PoC eDocuments</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+    <description>This is the custom module (PoC eDocuments) for running on a Jahia server.</description>
+
+    <scm>
+        <connection>scm:git:git@github.com:Jahia/poc-eDocs.git</connection>
+        <developerConnection>scm:git:git@github.com:Jahia/poc-eDocs.git</developerConnection>
+        <url>https://github.com/Jahia/poc-eDocs</url>
+    </scm>
+    <properties>
+        <jahia-depends>dam-selector,default</jahia-depends>
+    </properties>
+    <repositories>
+        <repository>
+            <id>jahia-public</id>
+            <name>Jahia Public Repository</name>
+            <url>https://devtools.jahia.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Jahia-Static-Resources>/css,/fonts,/javascript,/icons,/images</Jahia-Static-Resources>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

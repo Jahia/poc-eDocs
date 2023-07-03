@@ -1,0 +1,12 @@
+.doc-heading{
+    min-height: 125px;
+    background: linear-gradient(90deg, rgba(0,0,0,.95) 0,rgba(0,0,0,.9) 30%,rgba(0,0,0,.85) 60%, rgba(0,0,0,.75) 100%);
+    box-shadow: inset 0px -3px 4px -4px #FFF;
+}
+
+
+@media (max-width: 1200px) {
+    .doc-heading{
+        min-height: 64px;
+    }
+}

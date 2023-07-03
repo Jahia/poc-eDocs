@@ -1,0 +1,35 @@
+{
+  "name": "doc4nt:document",
+  "fields": [
+    {
+      "name": "doc4:fragments",
+      "selectorType": "Picker",
+      "selectorOptionsMap":{
+        "type":"content",
+        "accordionItem": {
+          "picker-content-folders": {
+            "rootPath": "/sites/{site}/contents/sections"
+          }
+        },
+        "pickerConfig": {
+          "selectableTypesTable": ["doc4nt:fragment"]
+        }
+      }
+    },
+    {
+      "name": "doc4:company",
+      "selectorType": "Picker",
+      "selectorOptionsMap":{
+        "type":"default",
+        "accordionItem": {
+          "picker-content-folders": {
+            "rootPath": "/sites/{site}/contents/company"
+          }
+        },
+        "pickerConfig": {
+          "selectableTypesTable": ["doc4nt:company"]
+        }
+      }
+    }
+  ]
+}

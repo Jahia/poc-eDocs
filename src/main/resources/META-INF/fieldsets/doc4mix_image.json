@@ -1,0 +1,9 @@
+{
+  "name": "doc4mix:image",
+  "fields": [
+    {
+      "name": "doc4:image",
+      "selectorType": "DamSelector"
+    }
+  ]
+}
