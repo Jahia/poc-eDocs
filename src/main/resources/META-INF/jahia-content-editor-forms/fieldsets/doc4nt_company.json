@@ -1,0 +1,9 @@
+{
+  "name": "doc4nt:company",
+  "fields": [
+    {
+      "name": "doc4:logo",
+      "selectorType": "DamSelector"
+    }
+  ]
+}

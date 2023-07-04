@@ -1,0 +1,15 @@
+{
+  "name": "doc4mix:docsConfiguration",
+  "fields": [
+    {
+      "name": "doc4:webappTheme",
+      "selectorType": "CodeMirror",
+      "selectorOptions":[
+        {
+          "name": "mode",
+          "value" : "javascript"
+        }
+      ]
+    }
+  ]
+}

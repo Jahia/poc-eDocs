@@ -8,7 +8,7 @@
 
 <template:addResources type="css" resources="webapp/${requestScope.webappCssFileName}" media="screen"/>
 <%--<link rel="stylesheet" src="/modules/gp-poc-documents/css/webapp/main.a6276781.css" media="all"/>--%>
-<script type="application/javascript" src="/modules/gp-poc-documents/javascript/webapp/${requestScope.webappJsFileName}"></script>
+<script type="application/javascript" src="/modules/poc-eDocs/javascript/webapp/${requestScope.webappJsFileName}"></script>
 <%--<template:addResources type="javascript" resources="webapp/${requestScope.webappJsFileName}" media="screen"/>--%>
 <%-- Doesn't work in CE preview --%>
 

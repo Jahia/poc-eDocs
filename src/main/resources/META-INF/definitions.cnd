@@ -6,12 +6,20 @@
 
 [doc4mix:components] > jmix:droppableContent, jmix:editorialContent mixin
 
+[doc4mix:docsConfiguration] mixin
+ - doc4:webappTheme (string) indexed=no
+
+[doc4mix:docsWebAppConfig] mixin
+ - doc4:webAppConfig (weakreference,choicelist[nodes='$currentSite/contents/webapp/edocs;doc4nt:docsWebAppConfig']) < doc4nt:docsWebAppConfig
+
 [doc4mix:image] mixin
  - doc4:image (weakreference, picker[type='image'])
 
+[doc4nt:docsWebAppConfig] > jnt:content, doc4mix:components, doc4mix:docsConfiguration, mix:title
+
 [doc4nt:docHeading] > jnt:content, doc4mix:components, jmix:bindedComponent, jmix:studioOnly
 
-[doc4nt:document] > jnt:content, jmix:mainResource, doc4mix:components, doc4mix:image, mix:title orderable
+[doc4nt:document] > jnt:content, jmix:mainResource, doc4mix:components, doc4mix:image, doc4mix:docsWebAppConfig, mix:title orderable
  - doc4:subtitle (string)
  - doc4:model (string)
  - doc4:revision (date)

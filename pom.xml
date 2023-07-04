@@ -22,7 +22,8 @@
         <url>https://github.com/Jahia/poc-eDocs</url>
     </scm>
     <properties>
-        <jahia-depends>dam-selector,default</jahia-depends>
+        <require-capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</require-capability>
+        <jahia-depends>dam-selector,codemirror-editor,default</jahia-depends>
     </properties>
     <repositories>
         <repository>
@@ -47,6 +48,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
+                        <_dsannotations>org.jahia.se.modules.documents.*</_dsannotations>
                         <Jahia-Static-Resources>/css,/fonts,/javascript,/icons,/images</Jahia-Static-Resources>
                     </instructions>
                 </configuration>
