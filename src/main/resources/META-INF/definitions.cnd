@@ -14,6 +14,7 @@
 
 [doc4mix:docsConfiguration] mixin
  - doc4:webappTheme (string) indexed=no
+ - doc4:webappCustomCss (string) indexed=no
 
 [doc4mix:docsWebAppConfig] mixin
  - doc4:webAppConfig (weakreference,choicelist[nodes='$currentSite/contents/webapp/edocs;doc4nt:docsWebAppConfig']) < doc4nt:docsWebAppConfig

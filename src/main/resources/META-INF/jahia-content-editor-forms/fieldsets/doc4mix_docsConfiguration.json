@@ -10,6 +10,16 @@
           "value" : "javascript"
         }
       ]
+    },
+    {
+      "name": "doc4:webappCustomCss",
+      "selectorType": "CodeMirror",
+      "selectorOptions":[
+        {
+          "name": "mode",
+          "value" : "css"
+        }
+      ]
     }
   ]
 }
