@@ -6,6 +6,12 @@
 
 [doc4mix:components] > jmix:droppableContent, jmix:editorialContent mixin
 
+[doc4mix:docsWebappStaticLabels] mixin
+ - doc4:owner (string) = resourceBundle('label.docs_owner') autocreated internationalized indexed=no
+ - doc4:address (string) = resourceBundle('label.docs_address') autocreated internationalized indexed=no
+ - doc4:phone (string) = resourceBundle('label.docs_phone') autocreated internationalized indexed=no
+ - doc4:email (string) = resourceBundle('label.docs_email') autocreated internationalized indexed=no
+
 [doc4mix:docsConfiguration] mixin
  - doc4:webappTheme (string) indexed=no
 
@@ -15,7 +21,7 @@
 [doc4mix:image] mixin
  - doc4:image (weakreference, picker[type='image'])
 
-[doc4nt:docsWebAppConfig] > jnt:content, doc4mix:components, doc4mix:docsConfiguration, mix:title
+[doc4nt:docsWebAppConfig] > jnt:content, doc4mix:components,doc4mix:docsWebappStaticLabels, doc4mix:docsConfiguration, mix:title
 
 [doc4nt:docHeading] > jnt:content, doc4mix:components, jmix:bindedComponent, jmix:studioOnly
 
